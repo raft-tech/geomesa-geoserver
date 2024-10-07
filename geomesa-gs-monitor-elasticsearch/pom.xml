@@ -4,8 +4,8 @@
 
     <parent>
         <groupId>org.geomesa.geoserver</groupId>
-        <artifactId>geomesa-geoserver_2.12</artifactId>
-        <version>5.0.1</version>
+        <artifactId>geomesa-geoserver_2.13</artifactId>
+        <version>5.0.1-cb</version>
     </parent>
 
     <artifactId>geomesa-gs-monitor-elasticsearch_2.12</artifactId>

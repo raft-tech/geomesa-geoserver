@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.geomesa.geoserver</groupId>
-    <artifactId>geomesa-geoserver_2.12</artifactId>
-    <version>5.0.1</version>
+    <artifactId>geomesa-geoserver_2.13</artifactId>
+    <version>5.0.1-cb</version>
     <name>GeoMesa GeoServer Integration</name>
     <description>Software to help integrate GeoMesa and GeoServer</description>
     <url>https://github.com/geomesa/geomesa-geoserver</url>
@@ -59,17 +59,17 @@
     </modules>
 
     <properties>
-        <geomesa.version>5.1.0-SNAPSHOT</geomesa.version>
+        <geomesa.version>5.0.1-cb</geomesa.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <scala.version>2.12.19</scala.version>
-        <scala.binary.version>2.12</scala.binary.version>
+        <scala.version>2.13.12</scala.version>
+        <scala.binary.version>2.13</scala.binary.version>
         <jdk.version>11</jdk.version>
 
         <!-- bundled with geoserver -->
-        <gt.version>30.4</gt.version> <!-- make sure this tracks with gs, jts, spatial4j and ejml -->
-        <geoserver.version>2.24.4</geoserver.version>
+        <gt.version>30.2</gt.version> <!-- make sure this tracks with gs, jts, spatial4j and ejml -->
+        <geoserver.version>2.24.5</geoserver.version>
         <jts.version>1.19.0</jts.version> <!-- needs to track with gt/gs version -->
         <spatial4j.version>0.8</spatial4j.version> <!-- needs to track with jts version -->
         <guava.version>32.0.0-jre</guava.version>
@@ -557,13 +557,13 @@
                                     <message>property scala.version must be set</message>
                                     <property>scala.version</property>
                                     <regexMessage>property scala.version doesn't match expected compiler version</regexMessage>
-                                    <regex>2.12.*</regex>
+                                    <regex>2.13.*</regex>
                                 </requireProperty>
                                 <requireProperty>
                                     <message>property scala.binary.version must be set</message>
                                     <property>scala.binary.version</property>
                                     <regexMessage>property scala.binary.version doesn't match compiler version</regexMessage>
-                                    <regex>2.12</regex>
+                                    <regex>2.13</regex>
                                 </requireProperty>
                             </rules>
                         </configuration>
