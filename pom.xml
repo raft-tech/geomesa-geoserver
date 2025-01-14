@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.geomesa.geoserver</groupId>
-    <artifactId>geomesa-geoserver_2.12</artifactId>
-    <version>5.2.0-SNAPSHOT</version>
+    <artifactId>geomesa-geoserver_2.13</artifactId>
+    <version>5.1.0-raft</version>
     <name>GeoMesa GeoServer Integration</name>
     <description>Software to help integrate GeoMesa and GeoServer</description>
     <url>https://github.com/geomesa/geomesa-geoserver</url>
@@ -63,8 +63,8 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <scala.version>2.12.19</scala.version>
-        <scala.binary.version>2.12</scala.binary.version>
+        <scala.version>2.13.12</scala.version>
+        <scala.binary.version>2.13</scala.binary.version>
         <jdk.version>11</jdk.version>
 
         <!-- bundled with geoserver -->
@@ -548,7 +548,7 @@
                                     <excludes combine.children="append">
                                         <exclude>*:*_2.10</exclude>
                                         <exclude>*:*_2.11</exclude>
-                                        <exclude>*:*_2.13</exclude>
+                                        <exclude>*:*_2.12</exclude>
                                         <exclude>*:*_3</exclude>
                                         <exclude>log4j:*</exclude>
                                         <exclude>org.slf4j:slf4j-log4j12</exclude>
@@ -558,13 +558,13 @@
                                     <message>property scala.version must be set</message>
                                     <property>scala.version</property>
                                     <regexMessage>property scala.version doesn't match expected compiler version</regexMessage>
-                                    <regex>2.12.*</regex>
+                                    <regex>2.13.*</regex>
                                 </requireProperty>
                                 <requireProperty>
                                     <message>property scala.binary.version must be set</message>
                                     <property>scala.binary.version</property>
                                     <regexMessage>property scala.binary.version doesn't match compiler version</regexMessage>
-                                    <regex>2.12</regex>
+                                    <regex>2.13</regex>
                                 </requireProperty>
                             </rules>
                         </configuration>
