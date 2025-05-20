@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.geomesa.geoserver</groupId>
-        <artifactId>geomesa-geoserver_2.12</artifactId>
-        <version>5.3.0-SNAPSHOT</version>
+        <artifactId>geomesa-geoserver_2.13</artifactId>
+        <version>5.3.0-raft</version>
     </parent>
 
-    <artifactId>geomesa-gs-kafka-status-endpoint_2.12</artifactId>
+    <artifactId>geomesa-gs-kafka-status-endpoint_2.13</artifactId>
     <name>GeoMesa GeoServer Kafka Status Endpoint</name>
 
     <dependencies>
